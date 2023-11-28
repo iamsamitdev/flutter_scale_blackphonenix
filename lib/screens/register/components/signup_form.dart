@@ -82,30 +82,27 @@ class _SignUpFormState extends State<SignUpForm> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: defaultPadding),
-            child: TextFormField(
-              keyboardType: TextInputType.emailAddress,
-              textInputAction: TextInputAction.next,
-              cursorColor: kPrimaryColor,
-              validator: (value) {
-                if(value!.isEmpty) {
-                  return "Please fill email";
-                }
-                return null;
-              },
-              onSaved: (value) {
-                _email = value!;
-              },
-              decoration: InputDecoration(
-                hintText: "Email",
-                prefixIcon: Padding(
-                  padding: const EdgeInsets.all(defaultPadding),
-                  child: Icon(Icons.email),
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
+          TextFormField(
+            keyboardType: TextInputType.emailAddress,
+            textInputAction: TextInputAction.next,
+            cursorColor: kPrimaryColor,
+            validator: (value) {
+              if(value!.isEmpty) {
+                return "Please fill email";
+              }
+              return null;
+            },
+            onSaved: (value) {
+              _email = value!;
+            },
+            decoration: InputDecoration(
+              hintText: "Email",
+              prefixIcon: Padding(
+                padding: const EdgeInsets.all(defaultPadding),
+                child: Icon(Icons.email),
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
               ),
             ),
           ),

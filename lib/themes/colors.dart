@@ -12,4 +12,4 @@ const divider = Color(0xFFBDBDBD);
 // Login & Register
 const kPrimaryColor = Color(0xFF6F35A5);
 const kPrimaryLightColor = Color(0xFFF1E6FF);
-const double defaultPadding = 16.0;
+const double defaultPadding = 12.0;

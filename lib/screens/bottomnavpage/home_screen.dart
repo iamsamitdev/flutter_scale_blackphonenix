@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
           onPressed: _toggleView, 
           icon: Icon(_isGridView ? Icons.list_outlined: Icons.grid_view)
         ),
-        title: Text('Product'),
+        title: Text('สินค้า'),
         actions: [
           IconButton(
             onPressed: (){
